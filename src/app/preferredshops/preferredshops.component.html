@@ -1,0 +1,17 @@
+<div class="container">
+        <div>
+         <div class="col-md-3" *ngFor=" let shop of shopservice.preferredshops">
+            <div class="panel panel-default">
+                <div class="panel-heading">Shop Name:  <strong>{{shop.name}}</strong></div>
+                    <div class="panel-body"> 
+                        <p>Distance: {{shop.distance | number:'0.2'}}km</p>
+                    </div>
+                    <div class="panel-footer">
+                        <button type="button" (click)= "remove(shop)"class="btn btn-danger">remove</button>
+                    </div>
+                </div>                 
+            </div>
+        </div>      
+    </div>
+    <ul>
+            

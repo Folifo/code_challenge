@@ -1,0 +1,16 @@
+<div class="container">
+    <div *ngIf="shops">
+     <div class="col-md-3" *ngFor=" let s of shops | distance:orderBy:ascending">
+        <div class="panel panel-default">
+            <div class="panel-heading">Shop Name:  <strong>{{s.name}}</strong></div>
+                <div class="panel-body"> 
+                    <p>Distance: {{s.distance | number:'0.2'}}km</p>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" (click)="dislike(s)" class="btn btn-danger">Dislike</button>
+                    <button type="button" (click)="like(s)" class="btn btn-success">Like</button>
+                </div>
+            </div>                 
+        </div>
+    </div>      
+</div>

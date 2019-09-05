@@ -1,0 +1,24 @@
+<div class="col-md-6" style=" padding-left: 200px; margin-left: 100px;">
+        <div class="panel panel-default">
+                <div class="panel-heading"><strong>Login</strong> (email= aaa@bbb.com & password=123)</div>
+                    <div class="panel-body"> 
+                        <form #f="ngForm" (ngSubmit)="onLogin(f.value)">
+                            <div class="form-group">
+                                    <label class="control-label">email</label>
+                                    <input type="email" class="form-control" name="email" ngModel>
+                            </div>
+                            <div class="form-group">
+                                    <label class="control-label">password</label>
+                                    <input type="password" class="form-control" name="password" ngModel>
+                            </div>
+                             <button class="btn btn-primary" type="submit"> Connect </button>
+                        </form>
+                    </div>
+
+                    <div class="alert alert-danger" role="alert" *ngIf="wronguser">LogIn invalid ! </div>
+                
+                        
+                    
+                               
+        </div>
+</div>
