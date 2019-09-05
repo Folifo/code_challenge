@@ -13,5 +13,10 @@ export class PreferredshopsComponent implements OnInit {
   ngOnInit() {
      
   }
-   
+
+
+  remove(value:any){
+    let n = this.shopservice.preferredshops.indexOf(value);
+    this.shopservice.preferredshops.splice(n,1);
+  }
 }

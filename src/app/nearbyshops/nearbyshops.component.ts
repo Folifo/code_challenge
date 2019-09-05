@@ -26,9 +26,7 @@ export class NearbyshopsComponent implements OnInit {
   
   like(value : any){
     this.shopservice.addShop(value);
-       let n=this.shops.indexOf(value);
-       console.log(n);
-        this.shops.splice(n,1);
+        this.shops.splice(this.shops.indexOf(value),1);
   }
 
   dislike(value : any){
