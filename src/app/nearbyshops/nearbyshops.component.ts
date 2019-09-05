@@ -32,4 +32,5 @@ export class NearbyshopsComponent implements OnInit {
   dislike(value : any){
      this.shops.splice(this.shops.indexOf(value),1);
   }
+
 }

@@ -19,4 +19,5 @@ export class PreferredshopsComponent implements OnInit {
     let n = this.shopservice.preferredshops.indexOf(value);
     this.shopservice.preferredshops.splice(n,1);
   }
+
 }
